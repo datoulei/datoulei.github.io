@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo配置 | 岛民不会抓鱼的Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="为了更全面的了解Hexo，特地从官网把文档扒下，再加上自己的理解翻译成中文，供大家学习交流。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo配置">
+<meta property="og:url" content="http://datoulei.github.io/2014/05/07/hexo_configuration/index.html">
+<meta property="og:site_name" content="岛民不会抓鱼的Blog">
+<meta property="og:description" content="为了更全面的了解Hexo，特地从官网把文档扒下，再加上自己的理解翻译成中文，供大家学习交流。">
+<meta property="og:updated_time" content="2015-02-25T14:10:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo配置">
+<meta name="twitter:description" content="为了更全面的了解Hexo，特地从官网把文档扒下，再加上自己的理解翻译成中文，供大家学习交流。">
+  
+    <link rel="alternative" href="/atom.xml" title="岛民不会抓鱼的Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">岛民不会抓鱼的Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">码农，前端工程师，爱吃鱼的岛民</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://datoulei.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo_configuration" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/05/07/hexo_configuration/" class="article-date">
+  <time datetime="2014-05-07T10:18:58.000Z" itemprop="datePublished">2014-05-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo配置
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>为了更全面的了解Hexo，特地从官网把文档扒下，再加上自己的理解翻译成中文，供大家学习交流。</p>
+<a id="more"></a>
+<p>原文出处： <a href="http://hexo.io/docs/configuration.html" target="_blank" rel="external">http://hexo.io/docs/configuration.html</a></p>
+<h2 id="Site_配置">Site 配置</h2><p>主要配置网站的标题、作者、网站描述等等，具体参数如下：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>网站标题</td>
+</tr>
+<tr>
+<td><code>subtitle</code></td>
+<td>网站副标题</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>网站描述</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>作者姓名</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>邮箱</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>网站使用语言(中文: zh-CN),其他设置详见<a href="http://www.w3.org/International/articles/language-tags/" target="_blank" rel="external">IETF Format</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="URL_配置">URL 配置</h2><p>主要配置网站的URL地址以及相关的目录路径</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td>网站的URL</td>
+<td></td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>网站的根路径</td>
+<td>/</td>
+</tr>
+<tr>
+<td><code>permalink</code></td>
+<td>文章的静态链接格式</td>
+<td>:year/:month/:day/:title/</td>
+</tr>
+<tr>
+<td><code>tag_dir</code></td>
+<td>标签目录</td>
+<td>tags</td>
+</tr>
+<tr>
+<td><code>archive_dir</code></td>
+<td>归档目录</td>
+<td>archives</td>
+</tr>
+<tr>
+<td><code>category_dir</code></td>
+<td>分类目录</td>
+<td>categories</td>
+</tr>
+<tr>
+<td><code>code_dir</code></td>
+<td>引用代码目录</td>
+<td>downloads/code</td>
+</tr>
+</tbody>
+</table>
+<p><code>注意</code>: 如果你的博客在网站的子目录下,例如:<code>http://yoursite.com/blog</code>. 则将 <code>url</code> 设为 <code>http://yoursite.com/blog</code> 并把 <code>root</code> 设为 <code>/blog/</code></p>
+<h2 id="Writing_配置">Writing 配置</h2><p>创建文章和生成静态页面的相关设置</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new_post_name</code></td>
+<td>新文章的文件名</td>
+<td>:title.md</td>
+</tr>
+<tr>
+<td><code>default_layout</code></td>
+<td>默认的布局</td>
+<td>post</td>
+</tr>
+<tr>
+<td><code>auto_spacing</code></td>
+<td>自动在单词间添加空格</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>titlecase</code></td>
+<td>首字母大写</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>external_link</code></td>
+<td>在新窗口打开外部链接</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>max_open_file</code></td>
+<td>同步IO生成文件时的最大数量</td>
+<td>100</td>
+</tr>
+<tr>
+<td><code>multi_thread</code></td>
+<td>开启多线程</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>filename_case</code></td>
+<td>文件名大小写.1:小写 2:大写</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>render_drafts</code></td>
+<td>在本地服务器上将草稿作为文章发布</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>highlight</code></td>
+<td>代码块高亮设置</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Category_&amp;_Tag_配置">Category &amp; Tag 配置</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>default_category</code></td>
+<td>默认分类</td>
+<td>uncategorized</td>
+</tr>
+<tr>
+<td><code>category_map</code></td>
+<td>分类映射(原文 <em>Category slugs</em>，英语水平较弱，只能按参数名进行翻译…)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>tag_map</code></td>
+<td>标签映射(原文 <em>tag slugs</em>，英语水平较弱，只能按参数名进行翻译…)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Archives_配置">Archives 配置</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>archive</code></td>
+<td>2:启用分页 1:禁用分页  0:完全禁用</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>2:启用分页 1:禁用分页  0:完全禁用</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>tag</code></td>
+<td>2:启用分页 1:禁用分页  0:完全禁用</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Server_配置">Server 配置</h2><p>本地服务器配置参数</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>port</code></td>
+<td>端口号</td>
+<td>4000</td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td>在控制台显示请求信息。debug模式下强制开启</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>logger_format</code></td>
+<td>日志格式化</td>
+</tr>
+<tr>
+<td><code>server_ip</code></td>
+<td>绑定ip</td>
+<td>0.0.0.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Date_/_Time_format_配置">Date / Time format 配置</h2><p>hexo使用<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a>来解析和格式化日期</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date_format</code></td>
+<td>日期格式化</td>
+<td>MMM D YYYY</td>
+<td></td>
+</tr>
+<tr>
+<td><code>time_format</code></td>
+<td>时间格式化</td>
+<td>H:mm:ss</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Pagination_配置">Pagination 配置</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>per_page</code></td>
+<td>每页文章数</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>pagination_dir</code></td>
+<td>分页目录</td>
+<td>page</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Comment_配置">Comment 配置</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>disqus_shortname</code></td>
+<td>Disqus（社会化评论系统） 昵称</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Extensions_配置">Extensions 配置</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>theme</code></td>
+<td>使用主题</td>
+</tr>
+<tr>
+<td><code>exclude_generator</code></td>
+<td>禁用生成器</td>
+</tr>
+<tr>
+<td><code>markdown</code></td>
+<td>Markdown 设置</td>
+</tr>
+<tr>
+<td><code>stylus</code></td>
+<td>stylu 设置</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://datoulei.github.io/2014/05/07/hexo_configuration/" data-id="cia2lb91q0006wjbfmdqnf5ks" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo入门系列/">Hexo入门系列</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/05/08/hexo_command/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hexo指令
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo入门系列/">Hexo入门系列</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo入门系列/" style="font-size: 10px;">Hexo入门系列</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/05/23/mock-angular/">用Mock.js + AngularJS来提高开发效率</a>
+          </li>
+        
+          <li>
+            <a href="/2014/05/08/hexo_command/">Hexo指令</a>
+          </li>
+        
+          <li>
+            <a href="/2014/05/07/hexo_configuration/">Hexo配置</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 姜赟<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
